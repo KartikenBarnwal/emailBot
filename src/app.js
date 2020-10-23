@@ -8,8 +8,8 @@ require('../db/mongoose')
 const app = express()
 const port = process.env.PORT || 3000
 
-const publicDirPath = path.join(__dirname,'../public')
-const viewsPath = path.join(__dirname + '../views')
+const publicDirPath = path.join(__dirname, '../public')
+const viewsPath = path.join(__dirname, '../views')
 
 app.set('view engine', 'ejs');
 app.set('views', viewsPath);
