@@ -13,8 +13,10 @@ router.get('/',(req,res)=>{
 const transport =nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'kartikenkrb@gmail.com',
-        pass: 'ckugjumqeyujeawc'
+        // user: 'kartikenkrb@gmail.com',
+        // pass: 'ckugjumqeyujeawc'
+        user: 'industry.cell.nitkurukshetra@gmail.com',
+        pass: 'industrycell'
     }
 })
 
@@ -47,6 +49,7 @@ router.post('/',async(req,res)=>{
     }
     message.subject = req.body.subject
     message.text = req.body.content
+    message.html = req.body.htmlcontent
 
 
 

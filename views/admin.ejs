@@ -6,12 +6,13 @@
     <title>Document</title>
     <style>
         body{
-            background-image: url('https://wallpapercave.com/wp/wp2570970.jpg');
-            background-size: cover;
-            background-attachment: fixed;
+            background: #DC2424;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
         .admin{
-            position: fixed;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -19,12 +20,11 @@
             display: flex;
             justify-content: center;
             width: 70vw;
-            height: 75vh;
-            background-color: rgba(255, 255, 255, 0.6);
+            height: 80vh;            
             
             text-align: center;
         }
-        #subject,#sender{
+        #subject{
             text-align: center;
             height: 5vh;
         }
@@ -45,7 +45,7 @@
         }
         textarea{
             width: 60vw;
-            height: 50%;
+            /* height: 50%; */
         }
         #submit{
             width: 200px;
@@ -67,6 +67,7 @@
 
             <br>
             <textarea placeholder="Remember, be nice, be friendly! Go write a beautiful Email" cols="30" rows="5" name="content"></textarea>
+            <textarea placeholder="Providing you the power of HTML, CSS & Bootstrap. Fill your creativity here!" cols="30" rows="5" name="htmlcontent"></textarea>
             <input type="submit" value="Send It!" id="submit">
         </form>
     </div>
